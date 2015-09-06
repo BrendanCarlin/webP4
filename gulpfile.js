@@ -43,9 +43,9 @@ gulp.task('minify-html', function() {
     spare:true
   };
  
-  return gulp.src('./build/views/*.html')
+  return gulp.src('./*.html')
     .pipe(minifyHTML(opts))
-    .pipe(gulp.dest('./build/views'));
+    .pipe(gulp.dest('./build'));
 });
 
 gulp.task('smush', function () {
