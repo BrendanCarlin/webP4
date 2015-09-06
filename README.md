@@ -4,6 +4,9 @@
 #####Note to Udacity:
 This was by far the most challenging and informative project I've done so far.  You didn't know it, but there were times where you and I weren't on the best of terms because of Project 4.  Now I can honestly say I'm very grateful for this challenge--it has taught me more than I expected to learn when I started this nanodegree and forced me to utilize tools I would've otherwise shyed away from.
 
+Please note that I did use gulp to automate certain tasks for improved website performance.  My gulpfile.js is included in this repo, but I did not include the node_modules folder as it was giving me errors while trying to commit it.
+
+
 #####Changes to '/views/js/main.js':
 - `changePizzaSizes()`: Pulled variables outside of the for-loop to prevent iterations on the DOM during function callback
 - `updatePositions()`:  pulled calculations on DOM from `querySelectorAll` and `scrollTop` outside of for-loop, then created an array for `var = userScroll` to reduce DOM iterations
@@ -16,11 +19,10 @@ This was by far the most challenging and informative project I've done so far.  
 #####Changes to '/views/CSS':
 - minified CSS using gulp, updated folder to minCSS during minification
 
-#####Changes to 'views/images/pizzeria.jpg':
-- manually reduced pixel size of image for Cam's portfolio page on index.html
-- optimized image using gulp-imagemin and gulp-smushit
+#####Changes to 'views/images/*':
+- optimized images using gulp-imagemin, smushit, and pngquant
 
-#####Changes to '/*.html':
+#####Changes to '/index.html':
 - added `async` to analytics.js and 'GoogleAnalyticsObject'
 - removed `href` to google fonts, replaced with WebFont Loader by bramstein with link to sourcecode on github.  Moved script to bottom of html body
 - inlined CSS elements using gulp
