@@ -9,7 +9,7 @@ The optimizations I made received a score of 94/95 for mobile and desktop.
 To view the improvements and modifications I made to this project, you can view my comments and edits in the `source/index.html` file.
 Additionally, if you would like to run the production version of the application directly through your web browswer, you are welcome to clone
 or download the project to your desktop using the links provided by github.  Afterward, please locate the project directory and select the `build` folder.
-The `build` folder houses the exact same development code as the `source` directory, but all files have meen minified for production purposes.
+The `build` folder houses the exact same development code as the `source` directory, but all files have been minified for production purposes.
 Locate the `build/index.html` file and load it with your favorite web browser to run the application.
 
 
